@@ -8,7 +8,7 @@ function ProductDetail(props) {
     stars.push(<span className="glyphicon glyphicon-star" />);
   }
   
-  console.log(props.product)
+  
   return (
     <div className="col-sm-4 col-lg-4 col-md-4">
       <div className="thumbnail">
@@ -20,7 +20,7 @@ function ProductDetail(props) {
           </p>
         </div>
         <div className="ratings">
-          <p className="pull-right"><Reviews product={props.product} /></p>
+          <p className="pull-right"><Reviews productReviews={props.product.reviews} /></p>
           <p>
             {stars}
           </p>
